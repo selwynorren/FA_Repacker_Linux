@@ -1,63 +1,30 @@
-# Dungeondraft-GoPackage
+# FA_Repacker
 
-## Dungeondraft Packer and Unpacker
+## Installation:
+Download `dungeondraft-pack.exe` and `dungeondraft-unpack.exe` from [Ryex's GitHub Page](https://github.com/Ryex/Dungeondraft-GoPackager/releases).
 
-Command-line utilities to pack and unpack custom assets for Dungeondraft
+Download `FA_Repack.ps1` from my source files here.
 
-The pack tool by default does not on its own generate an ID for your package.
+Copy `dungeondraft-pack.exe`, `dungeondraft-unpack.exe`, and `FA_Repack.ps1` to the folder where you have you Forgotten Adventures `dungeondraft_pack` files. This will be referred to as your "FA Directory".
 
-So, it must have been pack at least once by Dungeondraft itself and have a valid `pack.json`
-OR
-A `pack.json` must be created by using the flags to pass in th pack name and version with an optional author.
+> You want to make sure you have all of your `dungeondraft_pack` files in the same FA Directory and not in sub-folders.
 
-Windows executable are provided so you don't have to build it yourself.
+## Usage:
 
-### Instation
-
-you can either install the precompiled binaries avalible on the [release page](https://github.com/Ryex/Dungeondraft-GoPackager/releases)
-
-Or, if you have [Go](https://go.dev/) installed you can `go install` them yourself
-
-```shell
-go install github.com/ryex/dungeondraft-gopackager/cmd/dungeondraft-pack
-go install github.com/ryex/dungeondraft-gopackager/cmd/dungeondraft-unpack
-```
-
-and the binaries will be complied and installed to your `$GOBIN` path
-
-### Usage:
-
-#### Show Help
-```
-dungeondraft-unpack.exe -h
-```
-
-#### Unpack Assets
-```
-dungeondraft-unpack.exe [args] <.dungeondraft_pack file> <dest folder>
-```
-The assets contained in the `.dungeondraft_pack`  file will be written to a folder the same name as the package under the dest folder.
-
-#### Pack Assets
-```
-dungeondraft-pack [args] <input folder> <dest folder>
-```
-The assets in the input folder (provided there is a valid `pack.json`) will be written to a `<packname>.dungeondraft_pack` file in the destination directory.
+### Repack Assets
+Open powershell and navigate to the FA Directory  and run the following command
 
 ```
-dungeondraft-pack [args] -G [-E] -N <packname> -V <version> [-A <author>] <input folder>
+./FA_Repacker.ps1 [-Output <output folder>] [-Clean]
 ```
-A valid `pack.json` with a new id and the provided values will be created in the input directory (-E overwrites an existing `pack.json`).
-The packer will then exit.
 
-```
-dungeondraft-pack [args] [-E] -N <packname> -V <version> [-A <author>] <input folder> <dest folder>
-```
-A valid `pack.json` with a new id and the provided values will be created in the input directory (-E overwrites an existing `pack.json`).
-Then the assets in the input folder will be written to a `<packname>.dungeondraft_pack` file in the destination directory.
+#### Clean
+Remove the original Forgotten Adventures `dungeondraft_pack` files?
+
+#### Output
+The path to use when creating the new repacks.
+
+> This defaults to the current directory if ommitted.
 
 ### If You Have Issues
-
-If you have issues like the packager not picking up files, try passing in the `-v` and `-vv` flags to get info and debug output. Then, makes sure there isn't a structural problem with your package folder.
-
-If you can't find the problem file an issue with the `-vv` debug output.
+Make sure you have enough disk space, you need about 2-3 times the total space of all `dungeondraft_pack` files available during the repacking operations.

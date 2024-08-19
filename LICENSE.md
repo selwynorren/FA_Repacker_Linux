@@ -1,5 +1,10 @@
 BSD 3-Clause License
 
+#### FA_Repacker.ps1
+Copyright (c) 2022, Chapel Studios, Jake Blackwell
+All rights reserved.
+
+#### dungeondraft-pack.exe & dungeondraft-unpack.exe
 Copyright (c) 2022, Rachel Powers
 All rights reserved.
 
