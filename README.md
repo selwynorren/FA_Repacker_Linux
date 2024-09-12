@@ -1,7 +1,7 @@
 # FA_Repacker
 
 ## Installation:
-Follow instructions to get the packer and unpacker from this post from [Ryex's GitHub Page] [https://github.com/Ryex/Dungeondraft-GoPackager/releases](https://github.com/Ryex/Dungeondraft-GoPackager/issues/5]](https://github.com/Ryex/Dungeondraft-GoPackager/issues/5).
+Follow instructions to get the packer and unpacker from this post (https://github.com/Ryex/Dungeondraft-GoPackager/issues/5) from Ryex's GitHub Page (https://github.com/Ryex/Dungeondraft-GoPackager).
 
 Download `FA_Repacker.sh` from my source files here.
 
