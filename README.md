@@ -1,5 +1,8 @@
 # FA_Repacker
 
+## General:
+This bash script was made possible using an automated [Powershell to Bash converter](https://codingfleet.com/code-converter/powershell/bash/). Small tweaks edited afterwards to make it slightly more compatable.
+
 ## Installation:
 Follow instructions to get the packer and unpacker from this post (https://github.com/Ryex/Dungeondraft-GoPackager/issues/5) from Ryex's GitHub Page (https://github.com/Ryex/Dungeondraft-GoPackager).
 
@@ -28,3 +31,6 @@ The path to use when creating the new repacks.
 
 ### If You Have Issues
 Make sure you have enough disk space, you need about 2-3 times the total space of all `dungeondraft_pack` files available during the repacking operations.
+
+### Thanks
+Not possible to have this without the packer and unpacker from [Ryex](https://github.com/Ryex/Dungeondraft-GoPackager) and the original PowerShell script of [Chapel Studios](https://github.com/ChapelStudios/FA_Repacker)
