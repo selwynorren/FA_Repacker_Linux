@@ -1,21 +1,21 @@
 # FA_Repacker
 
 ## Installation:
-Download `dungeondraft-pack.exe` and `dungeondraft-unpack.exe` from [Ryex's GitHub Page](https://github.com/Ryex/Dungeondraft-GoPackager/releases).
+Follow instructions to get the packer and unpacker form this post from [Ryex's GitHub Page]([https://github.com/Ryex/Dungeondraft-GoPackager/releases](https://github.com/Ryex/Dungeondraft-GoPackager/issues/5)).
 
-Download `FA_Repack.ps1` from my source files here.
+Download `FA_Repacker.sh` from my source files here.
 
-Copy `dungeondraft-pack.exe`, `dungeondraft-unpack.exe`, and `FA_Repack.ps1` to the folder where you have you Forgotten Adventures `dungeondraft_pack` files. This will be referred to as your "FA Directory".
+Copy `dungeondraft-pack`, `dungeondraft-unpack`, and `FA_Repacker.sh` to the folder where you have you Forgotten Adventures `dungeondraft_pack` files. This will be referred to as your "FA Directory".
 
 > You want to make sure you have all of your `dungeondraft_pack` files in the same FA Directory and not in sub-folders.
 
 ## Usage:
 
 ### Repack Assets
-Open powershell and navigate to the FA Directory  and run the following command
+Open terminal and navigate to the FA Directory  and run the following command
 
 ```
-./FA_Repacker.ps1 [-Output <output folder>] [-Clean]
+./FA_Repacker.sh [--output <output folder>] [--clean]
 ```
 
 #### Clean
